@@ -5,26 +5,57 @@
     font-weight: 600;
     font-style: normal;
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* #content::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+} */
 
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    margin-right: 1rem;
+    background-color: rgb(238, 238, 238);
+}
+header > nav {
+    margin-right: 5rem;
+}
+#content {
+    position: relative;
+}
 .bg-image {
     width: 100%;
-    position: absolute;
-    filter: brightness(50%);
 }
 
+.logo {
+    width: 5rem;
+}
+.text-container {
+    position: absolute;
+    left: 10%;
+    bottom: 42rem;
+}
 .head-line,
 .tag-line {
     font-family: "coolFont";
     color: white;
-    position: relative;
     font-size: 4rem;
-    top: 8rem;
-    left: 10%;
 }
+
 .tag-line {
     font-size: 2rem;
 }
 
-#content {
-    position: relative;
-}
+

@@ -1,4 +1,5 @@
 import './style.css';
-import createHomepage from './homePage';
+import {createHomepage, addLogo} from './homePage';
 
+addLogo();
 createHomepage();
