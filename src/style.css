@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'coolFont';
+    src: url('../assests/font/Outfit-VariableFont_wght.ttf'),
+    url('../assests/font/static/Outfit-Light.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.bg-image {
+    width: 100%;
+    position: absolute;
+    filter: brightness(50%);
+}
+
+.head-line,
+.tag-line {
+    font-family: "coolFont";
+    color: white;
+    position: relative;
+    font-size: 4rem;
+    top: 8rem;
+    left: 10%;
+}
+.tag-line {
+    font-size: 2rem;
+}
+
+#content {
+    position: relative;
+}
