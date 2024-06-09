@@ -22,7 +22,7 @@ const generateMenuItem = (name, descritpion, photo) => {
 // function that creates the DOM elements for the menu page
 const showMenu = () => {
     //clearing content
-    content.replaceChildren()
+    content.replaceChildren();
     const menuContainer = document.createElement("div");
     menuContainer.classList.add("menu-container")
     for (let i = 0; i < myMenu.length; i++) {

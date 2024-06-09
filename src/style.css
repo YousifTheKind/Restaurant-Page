@@ -101,4 +101,17 @@ header > nav > button{
     height: 200px;
     border-radius: .5vw;
 }
-
+.story-text {
+    font-family: "coolFont";
+    font-size: 1.5vw;
+    padding: 0rem 5rem;
+    line-height: 5vw;
+    color: #8c8c8c;
+    text-align: center;
+}
+.story-heading {
+    margin-top: 2rem;
+    font-family: "coolFont";
+    color: var(--green);
+    text-align: center;
+}
