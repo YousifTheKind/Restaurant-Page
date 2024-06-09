@@ -1,9 +1,9 @@
 import backgroundImage from '../assests/images/klara-kulikova-WcV2YkM3Dls-unsplash.jpg'
 import logoPic from '../assests/images/logo.png'
+const content = document.querySelector("#content");
 
 // function that creates the initial page-load
 const createHomepage = () => {
-    const content = document.querySelector("#content");
     const background = new Image();
     const headline = document.createElement("h1");
     const tagline = document.createElement("p");
@@ -36,4 +36,4 @@ const addLogo = () => {
 };
 
 
-export {createHomepage, addLogo};
+export {createHomepage, addLogo, content};

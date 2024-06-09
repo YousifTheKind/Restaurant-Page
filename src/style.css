@@ -58,4 +58,6 @@ header > nav {
     font-size: 2rem;
 }
 
-
+.item > img {
+    width: 50px;
+}
