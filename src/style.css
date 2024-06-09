@@ -2,7 +2,6 @@
     font-family: 'coolFont';
     src: url('../assests/font/Outfit-VariableFont_wght.ttf'),
     url('../assests/font/static/Outfit-Light.ttf');
-    font-weight: 600;
     font-style: normal;
 }
 * {
@@ -10,15 +9,9 @@
     margin: 0;
     padding: 0;
 }
-/* #content::before {
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: #000;
-    opacity: 0.5;
-    width: 100%;
-    height: 100%;
-} */
+:root {
+    --green: #247d28;
+}
 
 header {
     width: 100%;
@@ -27,16 +20,31 @@ header {
     justify-content: space-between;
     font-size: 2rem;
     margin-right: 1rem;
-    background-color: rgb(238, 238, 238);
+    background-color: var( --green);
 }
 header > nav {
-    margin-right: 5rem;
+    margin-right: 10rem;
+}
+header > nav > button{
+    color:  #fff;
+    font-family: 'coolFont';
+    font-size: 2rem;
+    font-weight: 500;
+    border: none;
+    margin: 0 20px 0;
+    background-color: var( --green);
+    cursor: pointer;
+    text-decoration:underline;
 }
 #content {
     position: relative;
 }
 .bg-image {
+    object-fit: cover;
     width: 100%;
+    height: 700px;
+    object-position: center;
+    filter: brightness(50%);
 }
 
 .logo {
@@ -45,7 +53,7 @@ header > nav {
 .text-container {
     position: absolute;
     left: 10%;
-    bottom: 42rem;
+    bottom: 32rem;
 }
 .head-line,
 .tag-line {
@@ -54,10 +62,43 @@ header > nav {
     font-size: 4rem;
 }
 
+
+.menu-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw 1.5vw;
+    margin:5vw 1vw ;
+}
+
 .tag-line {
     font-size: 2rem;
 }
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 1vw;
+    padding: 2vw;
+
+}
+.item > span {
+    margin: 20px;
+    font-family: 'coolFont';
+    font-weight: 700;
+    color:  var( --green);
+}
+.item > p {
+    font-family: 'coolFont';
+    font-weight: 200;
+}
 
 .item > img {
-    width: 50px;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: .5vw;
 }
+

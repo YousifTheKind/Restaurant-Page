@@ -8,3 +8,5 @@ createHomepage();
 
 // event listner that creates the menu tab
 document.querySelector(".menu").addEventListener("click", showMenu);
+
+document.querySelector(".home").addEventListener("click", createHomepage);

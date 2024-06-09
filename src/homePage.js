@@ -4,6 +4,8 @@ const content = document.querySelector("#content");
 
 // function that creates the initial page-load
 const createHomepage = () => {
+    //clearing content
+    content.replaceChildren()
     const background = new Image();
     const headline = document.createElement("h1");
     const tagline = document.createElement("p");

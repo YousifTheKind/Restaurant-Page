@@ -21,11 +21,10 @@ const generateMenuItem = (name, descritpion, photo) => {
 
 // function that creates the DOM elements for the menu page
 const showMenu = () => {
-
     //clearing content
     content.replaceChildren()
     const menuContainer = document.createElement("div");
-
+    menuContainer.classList.add("menu-container")
     for (let i = 0; i < myMenu.length; i++) {
         const menuItem = document.createElement("div");
         const itemName = document.createElement("span");
@@ -37,14 +36,12 @@ const showMenu = () => {
         itemPhoto.src = myMenu[i].photoURL;
 
         menuItem.append(itemPhoto, itemName, itemDescription);
-        menuItem.classList.add("item", `${i}`);
+        menuItem.classList.add("item", `i-${i}`);
 
         menuContainer.appendChild(menuItem);
         content.appendChild(menuContainer)
     }
 };
-
-
 
 generateMenuItem("ODIANO BREAKFAST", breakfastDescription, breakfastPic);
 generateMenuItem("ODIANO PIZZA", pizzaDescription, pizzaPic);
